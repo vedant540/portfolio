@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Vedant Waychal — Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+</head>
+<body>
+
+  <!-- ── NAV ── -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-logo">VW<span class="dot">.</span></div>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#achievements">Achievements</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#gallery">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-right">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark mode">
+        <span class="icon-sun"><i class="fa-solid fa-sun"></i></span>
+        <span class="icon-moon"><i class="fa-solid fa-moon"></i></span>
+      </button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ── HOME ── -->
+  <section class="home" id="home">
+    <div class="home-bg-shape"></div>
+    <div class="home-content reveal">
+      <div class="home-text">
+        <p class="home-greeting">Hello, I'm</p>
+        <h1 class="home-name">Vedant<br/><span>Waychal</span></h1>
+        <p class="home-tagline">BTech CSE Student &amp; Aspiring Developer</p>
+        <p class="home-intro">
+          Second-year Computer Science Engineering student at MIT Vishwaprayag University, Solapur.
+          Passionate about building useful software, exploring AI, and solving real-world problems through code.
+        </p>
+        <div class="home-btns">
+          <a href="#projects" class="btn btn-primary">View Projects</a>
+          <a href="#contact" class="btn btn-outline">Contact Me</a>
+        </div>
+      </div>
+      <div class="home-photo">
+        <div class="photo-ring">
+          <img src="assets/images/profile.jpg" alt="Vedant Waychal" onerror="this.src='https://ui-avatars.com/api/?name=Vedant+Waychal&size=300&background=6c63ff&color=fff&bold=true'"/>
+        </div>
+        <div class="photo-badge badge-1"><i class="fa-solid fa-code"></i> Developer</div>
+        <div class="photo-badge badge-2"><i class="fa-solid fa-graduation-cap"></i> BTech CSE</div>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ── ABOUT ── -->
+  <section class="about section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Who I Am</span>
+        <h2>About Me</h2>
+      </div>
+      <div class="about-grid">
+        <div class="about-card reveal">
+          <div class="card-icon"><i class="fa-solid fa-book-open"></i></div>
+          <h3>Education</h3>
+          <ul>
+            <li><strong>BTech Computer Science Engineering</strong><br/>MIT Vishwaprayag University, Solapur<br/><em>Semester II — 2024–Present</em></li>
+            <li>Subjects: Discrete Mathematics, Digital Logic Design, Calculus, Applied Chemistry</li>
+          </ul>
+        </div>
+        <div class="about-card reveal" style="--delay:.1s">
+          <div class="card-icon"><i class="fa-solid fa-heart"></i></div>
+          <h3>Interests</h3>
+          <ul>
+            <li>Web &amp; App Development (MERN Stack)</li>
+            <li>Artificial Intelligence &amp; Machine Learning</li>
+            <li>PC Gaming — GTA 5, F1 Racing, World of Warships, Simulation games</li>
+            <li>Environmental Tech &amp; Green Chemistry</li>
+          </ul>
+        </div>
+        <div class="about-card reveal" style="--delay:.2s">
+          <div class="card-icon"><i class="fa-solid fa-bullseye"></i></div>
+          <h3>Goals</h3>
+          <ul>
+            <li>Build an AI-powered SaaS product for Indian college students</li>
+            <li>Master full-stack development and cloud deployment</li>
+            <li>Contribute to open-source projects</li>
+            <li>Secure a high-impact software engineering role</li>
+          </ul>
+        </div>
+        <div class="about-card reveal" style="--delay:.3s">
+          <div class="card-icon"><i class="fa-solid fa-star"></i></div>
+          <h3>Strengths</h3>
+          <ul>
+            <li>Fast learner with a problem-solving mindset</li>
+            <li>Strong in C, JavaScript, React, Node.js, MongoDB</li>
+            <li>Ability to work under tight deadlines</li>
+            <li>Good at research and academic writing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── ACHIEVEMENTS ── -->
+  <section class="achievements section" id="achievements">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've Done</span>
+        <h2>Achievements</h2>
+      </div>
+
+      <h3 class="sub-heading reveal">Projects</h3>
+      <div class="achieve-grid">
+
+        <div class="achieve-card reveal">
+          <div class="achieve-img">
+            <img src="assets/images/ai4a-project.jpg" alt="AI4A Project" onerror="this.style.display='none'"/>
+            <div class="achieve-overlay"><span>AI4A</span></div>
+          </div>
+          <div class="achieve-body">
+            <span class="achieve-tag">AI for All</span>
+            <h4>AI4A Project</h4>
+            <p>Completed the AI for All (AI4A) initiative project, exploring practical applications of Artificial Intelligence in everyday scenarios and Indian societal contexts.</p>
+          </div>
+        </div>
+
+        <div class="achieve-card reveal" style="--delay:.1s">
+          <div class="achieve-img">
+            <img src="assets/images/design-thinking.jpg" alt="Design Thinking Project" onerror="this.style.display='none'"/>
+            <div class="achieve-overlay"><span>Design</span></div>
+          </div>
+          <div class="achieve-body">
+            <span class="achieve-tag">Innovation</span>
+            <h4>Design Thinking Project</h4>
+            <p>Applied human-centered design thinking methodology to identify, ideate, prototype, and test a solution for a real-world user problem, following the Stanford d.school framework.</p>
+          </div>
+        </div>
+
+        <div class="achieve-card reveal" style="--delay:.2s">
+          <div class="achieve-img">
+            <img src="assets/images/ace-project.jpg" alt="ACE Project" onerror="this.style.display='none'"/>
+            <div class="achieve-overlay"><span>ACE</span></div>
+          </div>
+          <div class="achieve-body">
+            <span class="achieve-tag">Green Chemistry</span>
+            <h4>ACE Project — Chemical Leaching Prevention</h4>
+            <p>Conducted a literature review on preventing chemical leaching from solid waste dumps in Solapur, Maharashtra. Proposed green chemistry solutions using locally available natural materials as adsorbents to reduce groundwater contamination.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <h3 class="sub-heading reveal" style="margin-top:3rem">Certificates</h3>
+      <div class="cert-grid">
+
+        <div class="cert-card reveal">
+          <div class="cert-icon"><i class="fa-brands fa-aws" style="color:#FF9900"></i></div>
+          <div class="cert-body">
+            <h4>Coursera Certificate</h4>
+            <p>Completed a professional course on Coursera covering core concepts relevant to computer science and software engineering.</p>
+            <img src="assets/certificates/coursera.jpg" alt="Coursera Certificate" class="cert-thumb" onerror="this.style.display='none'"/>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" style="--delay:.1s">
+          <div class="cert-icon"><i class="fa-solid fa-network-wired" style="color:#1BA0D7"></i></div>
+          <div class="cert-body">
+            <h4>Cisco NetAcad Certificate</h4>
+            <p>Earned a Cisco Networking Academy certificate covering fundamentals of networking and cybersecurity concepts.</p>
+            <img src="assets/certificates/netacad.jpg" alt="NetAcad Certificate" class="cert-thumb" onerror="this.style.display='none'"/>
+          </div>
+        </div>
+
+        <div class="cert-card reveal" style="--delay:.2s">
+          <div class="cert-icon"><i class="fa-solid fa-robot" style="color:#4CAF50"></i></div>
+          <div class="cert-body">
+            <h4>Yuva AI Certificate</h4>
+            <p>Completed the Yuva AI program, gaining hands-on exposure to Artificial Intelligence tools, concepts, and their applications in the Indian context.</p>
+            <img src="assets/certificates/yuva-ai.jpg" alt="Yuva AI Certificate" class="cert-thumb" onerror="this.style.display='none'"/>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── PROJECTS ── -->
+  <section class="projects section" id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">What I've Built</span>
+        <h2>Projects</h2>
+      </div>
+      <div class="proj-grid">
+
+        <div class="proj-card reveal">
+          <div class="proj-img">
+            <img src="assets/images/study-planner.jpg" alt="Study Planner App" onerror="this.src='https://via.placeholder.com/400x220/6c63ff/ffffff?text=Study+Planner+App'"/>
+            <div class="proj-links">
+              <a href="https://github.com/vedant540" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span>React</span><span>Node.js</span><span>MongoDB</span>
+            </div>
+            <h4>Study Planner Web Application</h4>
+            <p>A full-stack MERN application that helps students schedule their study sessions, track subjects, set goals, and monitor progress. Features user authentication, dashboard analytics, and a responsive UI.</p>
+          </div>
+        </div>
+
+        <div class="proj-card reveal" style="--delay:.15s">
+          <div class="proj-img">
+            <img src="assets/images/portfolio-site.jpg" alt="Portfolio Website" onerror="this.src='https://via.placeholder.com/400x220/f59e0b/ffffff?text=Portfolio+Website'"/>
+            <div class="proj-links">
+              <a href="https://github.com/vedant540" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span>
+            </div>
+            <h4>Personal Portfolio Website</h4>
+            <p>This very website — a responsive, animated personal portfolio with dark mode toggle, smooth scroll, and gallery lightbox. Deployed on GitHub Pages.</p>
+          </div>
+        </div>
+
+        <div class="proj-card reveal" style="--delay:.3s">
+          <div class="proj-img">
+            <img src="assets/images/ds-project.jpg" alt="Data Structures Project" onerror="this.src='https://via.placeholder.com/400x220/10b981/ffffff?text=C+Programming+DSA'"/>
+            <div class="proj-links">
+              <a href="https://github.com/vedant540" target="_blank" class="proj-link"><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
+          <div class="proj-body">
+            <div class="proj-tags">
+              <span>C</span><span>Data Structures</span>
+            </div>
+            <h4>Data Structures Assignments (C)</h4>
+            <p>Implementation of core data structures and algorithms in C including linked lists, stacks, queues, binary trees, and sorting algorithms as part of coursework.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ── GALLERY ── -->
+  <section class="gallery section" id="gallery">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Memories &amp; Milestones</span>
+        <h2>Gallery</h2>
+      </div>
+      <div class="gallery-tabs reveal">
+        <button class="tab-btn active" data-filter="all">All</button>
+        <button class="tab-btn" data-filter="certificates">Certificates</button>
+        <button class="tab-btn" data-filter="projects">Projects</button>
+        <button class="tab-btn" data-filter="photos">Photos</button>
+      </div>
+      <div class="gallery-grid" id="galleryGrid">
+        <div class="gallery-item reveal" data-cat="certificates">
+          <img src="assets/certificates/coursera.jpg" alt="Coursera Certificate" onerror="this.src='https://via.placeholder.com/300x200/6c63ff/fff?text=Coursera+Cert'"/>
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Coursera</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="certificates" style="--delay:.05s">
+          <img src="assets/certificates/netacad.jpg" alt="NetAcad Certificate" onerror="this.src='https://via.placeholder.com/300x200/1BA0D7/fff?text=NetAcad+Cert'"/>
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>NetAcad</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="certificates" style="--delay:.1s">
+          <img src="assets/certificates/yuva-ai.jpg" alt="Yuva AI Certificate" onerror="this.src='https://via.placeholder.com/300x200/4CAF50/fff?text=Yuva+AI+Cert'"/>
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Yuva AI</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="projects" style="--delay:.15s">
+          <img src="assets/images/study-planner.jpg" alt="Study Planner" onerror="this.src='https://via.placeholder.com/300x200/f59e0b/fff?text=Study+Planner'"/>
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Study Planner</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="projects" style="--delay:.2s">
+          <img src="assets/images/ace-project.jpg" alt="ACE Project" onerror="this.src='https://via.placeholder.com/300x200/ef4444/fff?text=ACE+Project'"/>
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>ACE Project</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="photos" style="--delay:.25s">
+          <img src="assets/images/profile.jpg" alt="Vedant Waychal" onerror="this.src='https://ui-avatars.com/api/?name=Vedant+Waychal&size=300&background=6c63ff&color=fff'"/>
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Profile</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="projects" style="--delay:.3s">
+          <img src="assets/images/design-thinking.jpg" alt="Design Thinking" onerror="this.src='https://via.placeholder.com/300x200/8b5cf6/fff?text=Design+Thinking'"/>
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>Design Thinking</span></div>
+        </div>
+        <div class="gallery-item reveal" data-cat="projects" style="--delay:.35s">
+          <img src="assets/images/ai4a-project.jpg" alt="AI4A Project" onerror="this.src='https://via.placeholder.com/300x200/06b6d4/fff?text=AI4A+Project'"/>
+          <div class="gallery-overlay"><i class="fa-solid fa-magnifying-glass-plus"></i><span>AI4A</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lb-close" id="lbClose"><i class="fa-solid fa-xmark"></i></button>
+    <button class="lb-prev" id="lbPrev"><i class="fa-solid fa-chevron-left"></i></button>
+    <button class="lb-next" id="lbNext"><i class="fa-solid fa-chevron-right"></i></button>
+    <div class="lb-img-wrap">
+      <img src="" alt="" id="lbImg"/>
+      <p class="lb-caption" id="lbCaption"></p>
+    </div>
+  </div>
+
+  <!-- ── CONTACT ── -->
+  <section class="contact section" id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-tag">Get In Touch</span>
+        <h2>Contact</h2>
+      </div>
+      <div class="contact-wrap">
+        <div class="contact-info reveal">
+          <p class="contact-intro">I'm always open to new opportunities, collaborations, and conversations. Feel free to reach out!</p>
+          <div class="contact-items">
+            <a href="mailto:vedantwaychal12@gmail.com" class="contact-item">
+              <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+              <div class="ci-text">
+                <span>Email</span>
+                <strong>vedantwaychal12@gmail.com</strong>
+              </div>
+            </a>
+            <a href="https://github.com/vedant540" target="_blank" class="contact-item">
+              <div class="ci-icon"><i class="fa-brands fa-github"></i></div>
+              <div class="ci-text">
+                <span>GitHub</span>
+                <strong>github.com/vedant540</strong>
+              </div>
+            </a>
+            <a href="#" class="contact-item">
+              <div class="ci-icon"><i class="fa-brands fa-linkedin"></i></div>
+              <div class="ci-text">
+                <span>LinkedIn</span>
+                <strong>Add your LinkedIn URL</strong>
+              </div>
+            </a>
+            <div class="contact-item">
+              <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+              <div class="ci-text">
+                <span>Location</span>
+                <strong>Solapur, Maharashtra, India</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal" id="contactForm">
+          <div class="form-group">
+            <input type="text" id="cName" placeholder="Your Name" required/>
+            <label for="cName">Your Name</label>
+          </div>
+          <div class="form-group">
+            <input type="email" id="cEmail" placeholder="Your Email" required/>
+            <label for="cEmail">Your Email</label>
+          </div>
+          <div class="form-group">
+            <textarea id="cMsg" rows="4" placeholder="Your Message" required></textarea>
+            <label for="cMsg">Your Message</label>
+          </div>
+          <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+          <p class="form-note" id="formNote"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── FOOTER ── -->
+  <footer class="footer">
+    <div class="container">
+      <p>Designed &amp; Built by <strong>Vedant Waychal</strong> &copy; 2025</p>
+      <p class="footer-sub">MIT Vishwaprayag University, Solapur</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
